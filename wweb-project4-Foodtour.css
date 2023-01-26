@@ -1,0 +1,199 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #F5E6CA;
+}
+
+/*--Header--*/
+#header {
+    text-transform: uppercase;
+}
+
+.header-img{
+    width: 100%;
+    height: 400px;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+.menu{
+    padding: 1% 5%;
+    font-family: Roboto, sans-serif;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+}
+
+.tablet-menu {
+    font-family: Roboto, sans-serif;
+    text-align: center;
+    font-size: 30px;
+    color: #FB9300;
+}
+
+li a{
+    text-decoration:none;
+}
+
+div a:hover {
+    text-decoration: underline;
+}
+
+/*--Banner--*/
+#banner {
+    width: 90%;
+    height: 70vh;
+    position: relative;
+    left: 5%;
+    animation-name: banner;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@keyframes banner {
+    0% {background-color: url("https://1.bp.blogspot.com/-KDESzRbUpAg/XfmGLUR3RBI/AAAAAAAAAS8/v2f9TGWyYw4ica4KFmLVaptc8rw3WY2ZwCEwYBhgL/s640/banh-xeo-3.jpg");}
+    20% {background-image: url("https://dacsan4u.com/static/team/upload/images/mon-ngon-chung/lau-mam-mien-tay/lau-mam-mien-tay-1.jpg");}
+    40% {background-image: url("https://www.simplyrecipes.com/thmb/7F0yryB8syc776cOOLdX4fB6Ors=/3190x2127/filters:fill(auto,1)/Simply-Recipes-Veggie-Tacos-LEAD-2-2fa9781c94da4b9797af48af47313854.jpg");}
+    60% {background-image: url("https://cdn.daynauan.info.vn/wp-content/uploads/2015/12/Spaghetti-thit-vien.jpg");}
+    80% {background-image: url("https://mblogthumb-phinf.pstatic.net/MjAxNzA0MjRfMjI3/MDAxNDkzMDIzMjc4MjU2.L-3Vv9r0XjeRGGncaB0p0II6mw9-NoBfu2k4PMCrTdgg.jP8wA64wrWrXrH3ZTP4UBCPR6ZWppqqnhXkS8FPpYMQg.JPEG.estelle926/151435979-56a57a083df78cf772888a61.jpg?type=w800");}
+    100%{background-image: url("https://cdn-www.vinid.net/2020/06/3676fb33-m-th%E1%BB%B1c-nh%E1%BA%ADt-b%E1%BA%A3n.jpg");}
+    }
+
+.banner-content {
+    position: relative;
+    left: 10px;
+    top: 30px;
+    color: white;
+    background-color: rgb(172, 172, 172);
+    width: 90%;
+    margin: 0;
+}
+
+/*--Style địa điểm--*/
+#place {
+    width: 80%;
+    border-radius: 5px;
+    padding: 1%;
+    margin: 0;
+    font-size: 45px;
+    position: relative;
+    left: 2%;
+    clear: both;
+}
+
+.place1 {
+    padding: 1%;
+    font-size: 30px;
+    width: 25%;
+    float: left;
+}
+
+.place2 {   /*--cho địa chỉ dài--*/
+    padding: 1%;
+    font-size: 20px;
+    width: 25%;
+    float: left;
+}
+
+/*--Style ẩm thực--*/
+.food {
+    width: 45%;
+    font-size: 30px;
+    float: left;
+    padding: 2%;
+}
+
+.sort {
+    width: 80%;
+    border-radius: 5px;
+    padding: 1%;
+    margin: 0;
+    font-size: 45px;
+    position: relative;
+    left: 2%;
+    text-align: left;
+    clear: both;
+}
+.search {
+    width: 60%;
+    height: 40px;
+    font-size: 30px;
+    border-radius: 5px;
+    background-color:rgb(243, 206, 151);
+    border-color: #FB9300;
+    text-align: center;
+    position: relative;
+    left: 20%;
+}
+
+/*--Footer--*/
+ #footer {
+    display: inline-block;
+    position: relative;
+    left: 2%;
+    padding-bottom: 2.5%;
+}
+
+/*--Responsive for mobile--*/
+@media only screen and (max-width: 767px){
+    [class*="col-"]{
+        width: 100%;
+    }
+}
+
+/*--Responsive for tablet--*/
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+}
+
+#for-tablet-desktop {
+    display: inline-block;
+    padding: 2%;
+}
+
+.tablet-menu {
+    float: left;
+}
+
+/*--Responsive for desktop--*/
+@media only screen and (min-width: 992px){
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+    #for-tablet-desktop {
+        display: inline-block;
+        padding: 2%;
+    }
+    
+    .tablet-menu {
+        float: left;
+    }
+}
